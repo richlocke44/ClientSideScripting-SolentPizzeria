@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Page</title>
+<link rel="stylesheet" href="css/contact.css" />
+<link rel="icon" href="images/favicon.fw.png">
+<script type="text/javascript" src="scripts/main.js">
+</script>
+<script type="text/javascript" src="scripts/contact.js">
+</script>
+</head>
+<body onload="startTime(); validate(); myMap(); keyDown(); changeRed();">
+	<div class="backgroundimg">
+    </div>
+    <!-- filtered header background -->
+	<div class="headbackground">
+    </div>
+    
+    <div id="wrapper">
+    
+        <header>
+        
+            <div class="logo">
+                    <img alt="Solent Pizzeria Logo" src="images/solent_pizzaria_logo2done2.fw.png" />
+            </div>
+            <!-- navigation menu -->    
+            <div class="headnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- container for info, clock and date -->
+            <div class="headcontent">
+                
+                <div class="headinfo">
+                    <p>Southampton<br>
+                       07817461041<br>
+                       <a href="mailto:richardlocke4422@gmail.com">richardlocke4422@gmail.com</a>
+                    </p>
+                </div>
+
+                <div id="clock">
+                </div>
+
+                <div id="date">
+                <script>
+                    startDate('date');
+                </script>
+                </div>
+             </div>
+        </header>
+        <!-- title logo -->
+        
+            <img class="title" alt="The Contact logo" src="images/contact2.fw.png"/>
+            <img class="contactimg" alt="contact icons" src="images/contact-us-1908763(1).fw.png"/>
+    <!-- main section -->
+        <div class="section">
+        
+            <h1>Contact us</h1>
+            <script>
+				validate();
+			</script>
+            <!-- contact form -->
+            <form id="send">
+            	<div class="contact"> 
+                	<script>
+						changeRed();
+					</script>
+                               	
+                    <p><label>First name:</label></p>
+                    <p class="firstname" style="display:inline">
+                    <input id="firstname" type="text" name="firstname" placeholder="Type first name here"/></p>
+                    <img  alt="redcross" id="cross" src="images/red cross.fw.png" style="display:none"/>
+                    <img alt="greentick" id="tick" src="images/green tick.fw.png" style="display:none"/>
+                   	<p id="firstnameRequiredError" style="display: none" >  Required </p>
+                      	              
+                    <p><label>Last name:</label></p>
+                    <p class="lastname" style="display:inline">
+                    <input id="lastname" type="text" name="lastname" placeholder="Type last name here"/></p>
+                    <img alt="redcross" id="cross2" src="images/red cross.fw.png" style="display:none"/>
+                    <img alt="greentick" id="tick2" src="images/green tick.fw.png" style="display:none"/>
+                    <p id="lastnameRequiredError" style="display: none">  Required </p>
+                    
+                    <p><label>Postcode:</label></p>
+                    <p class="postcode" style="display:inline">
+                    <input id="postcode" type="text" name="postcode" placeholder="Type postcode here"/></p>
+                    <img alt="redcross" id="cross3" src="images/red cross.fw.png" style="display:none"/>
+                    <img alt="greentick" id="tick3" src="images/green tick.fw.png" style="display:none"/>
+                    <p id="postcodeRequiredError" style="display: none">  Required </p>
+                    
+                    <p><label>Email:</label></p>
+                    <p class="email" style="display:inline">
+                    <input id="email" type="email" name="email" placeholder="Type email here"/></p>
+                    <img alt="redcross" id="cross4" src="images/red cross.fw.png" style="display:none"/>
+                    <img alt="greentick" id="tick4" src="images/green tick.fw.png" style="display:none"/>
+                    <p id="emailRequiredError" style="display: none">  Required </p>
+                    
+                    
+                    <p><label>Phone number:</label></p>
+                    <p class="number" style="display:inline">
+                    <input id="number" type="number" name="number" placeholder="Type number here"/></p>
+                    <img alt="redcross" id="cross5" src="images/red cross.fw.png" style="display:none"/>
+                    <img alt="greentick" id="tick5" src="images/green tick.fw.png" style="display:none"/>
+                    <p id="numberRequiredError" style="display: none">  Required </p>
+                    
+                    <p style="display:block"><label>Message:</label></p>
+                    <img alt="redcross" id="cross6" src="images/red cross.fw.png"  style="display:none"/>
+                    <img alt="greentick" id="tick6" src="images/green tick.fw.png" style="display:none"/>
+                    <p id="messageRequiredError" style="display: none">  Required </p> 
+                    <p class="message"><textarea name="message" placeholder="Type message here"></textarea></p>
+                    
+                    <p><input type="submit" name="send" value="Send"/></p>
+         		</div>
+                          
+            </form>
+        </div> <!-- end of main section -->
+        
+        <!-- google map location -->
+        <div class="googlemap">
+            <div id="map"></div>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjoJimnKQxi5fPlj9y-PTWk8exBvtxtMo&callback=myMap">
+            </script>
+        </div>        
+        
+	</div><!-- end of wrapper -->
+	
+	<footer>
+    	
+        <div class="footercontent">
+            <!-- bottom navigation menu -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- address -->
+            <p class="bottomaddress">
+                46 London Road<br />
+                Southampton<br />
+                Hampshire<br />
+                SO15 2AH<br />
+                United Kingdom
+            </p>
+            <!-- social media icons -->
+            <div class="footericons">
+            	<a href="https://www.facebook.com/"><img alt="facebook" src="images/facebook.ico"></a>
+                <a href="https://twitter.com/?lang=en"><img alt="twitter" src="images/twitter.png"></a>
+                <a href="https://www.instagram.com/"><img alt="instagram" src="images/instagram.fw.png"></a>
+                <a href="https://www.youtube.com/"><img alt="youtube" src="images/youtube.png"></a>
+            </div>
+        </div>   		
+        <!-- copyright/creator--> 
+        <p class="creator">&copy; Richard Locke Southampton Solent University 2017</p>
+      	
+	 </footer>
+</body>
+</html>
+            

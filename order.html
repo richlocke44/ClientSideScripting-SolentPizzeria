@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Order Page</title>
+<link rel="stylesheet" href="css/order.css" />
+<link rel="icon" href="images/favicon.fw.png">
+<script type="text/javascript" src="scripts/main.js">
+</script>
+<script type="text/javascript" src="scripts/order.js">
+</script>
+</head>
+<body onload="startTime(); main(); validate(); keyDown(); changeRed(); reset();">
+	<div class="backgroundimg">
+    </div>
+    <!-- filtered header background -->
+	<div class="headbackground">
+    </div>
+    
+    <div id="wrapper">
+    
+        <header>
+        
+            <div class="logo">
+                    <img alt="Solent Pizzeria Logo" src="images/solent_pizzaria_logo2done2.fw.png" />
+            </div>
+            <!-- navigation menu -->    
+            <div class="headnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- container for info, clock and date -->
+            <div class="headcontent">
+                
+                <div class="headinfo">
+                    <p>Southampton<br>
+                       07817461041<br>
+                       <a href="mailto:richardlocke4422@gmail.com">richardlocke4422@gmail.com</a>
+                    </p>
+                </div>
+
+                <div id="clock">
+                </div>
+
+                <div id="date">
+                <script>
+                    startDate('date');
+                </script>
+                </div>
+             </div>
+        </header>
+        <!-- title logo -->
+        
+            <img class="title" alt="The Order logo" src="images/order2.fw.png"/>
+    <div class="section">
+            <h1>Order Here</h1>
+            <form id="order">
+                
+                <div class="pizzasize">
+                	<p class="sizetitle">*Select your pizza base size:</p>
+                    <div class="sizes">
+                        <p><input type="radio" name="size" value="size_small" data-price="5.00" data-human-desc="Small"/> 
+                        Small (10") - <span class="price">£5.00</span></p>
+                        <p><input type="radio" name="size" value="size_medium" data-price="7.50" data-human-desc="Medium"/> 
+                        Medium (12") - <span class="price">£7.50</span></p>
+                        <p><input type="radio" name="size" value="size_large" data-price="10.00" data-human-desc="Large"/> 
+                        Large (15") - <span class="price">£10.00</span></p>
+                        <p><input type="radio" name="size" value="size_xlarge" data-price="12.50" data-human-desc="Extra Large"/> 
+                        Extra Large (18") - <span class="price">£12.50</span></p>
+                    </div>
+                    <img alt="size image" class="sizeimage" src="images/pizza_sizes.fw.png"/>
+                </div>
+                
+                <div class="pizzatopping">
+                	<p class="toppingtitle">*Select one or more toppings for your pizza:</p>
+                    <div class="toppings">
+                    <p><input type="checkbox" name="topping" value="cheese" data-price="0.20" data-human-desc="Just Cheese"/> 
+                    Just Cheese - <span class="price">£0.20</span></p>
+                    <p><input type="checkbox" name="topping" value="pineapple" data-price="0.40" data-human-desc="Pineapple"/> 
+                    Pineapple - <span class="price">£0.40</span></p>
+                    <p><input type="checkbox" name="topping" value="onion" data-price="0.40" data-human-desc="Onion"/> 
+                    Onion - <span class="price">£0.40</span></p>
+                    <p><input type="checkbox" name="topping" value="pepper" data-price="0.40" data-human-desc="Peppers"/> 
+                    Peppers - <span class="price">£0.40</span></p>
+                    <p><input type="checkbox" name="topping" value="pepperoni" data-price="1.00" data-human-desc="Pepperoni"/> 
+                    Pepperoni - <span class="price">£1.00</span></p>
+                    <p><input type="checkbox" name="topping" value="ham" data-price="1.00" data-human-desc="Ham"/> 
+                    Ham - <span class="price">£1.00</span></p>
+                    <p><input type="checkbox" name="topping" value="meatballs" data-price="1.00" data-human-desc="Meatballs"/>
+                     Meatballs - <span class="price">£1.00</span></p>
+                    <p><input type="checkbox" name="topping" value="sausage" data-price="1.00" data-human-desc="Sausage"/> 
+                    Sausage - <span class="price">£1.00</span></p>
+                    <p><input type="checkbox" name="topping" value="chicken" data-price="1.00" data-human-desc="Chicken"/> 
+                    Chicken - <span class="price">£1.00</span></p>
+                    <p><input type="checkbox" name="topping" value="bacon" data-price="1.00" data-human-desc="Bacon"/> 
+                    Bacon - <span class="price">£1.00</span></p>             
+                </div>
+                <img alt="toppping image" src="images/pizzatoppingimage.jpg" class="toppingimage" /> 
+                </div>
+                <div class="extras">
+                	<p class="extrastitle">Select any extras:</p>
+                    <div class="extra">
+                        <p><input type="checkbox" name="extra" value="chips" data-price="1.50" data-human-desc="Chips"/> 
+                        Chips - <span class="price">£1.50</span></p>
+                        <p><input type="checkbox" name="extra" value="garlicbread" data-price="1.50" data-human-desc="Garlic Bread"/> 
+                        Garlic Bread (4 piece) - <span class="price">£1.50</span></p>
+                        <p><input type="checkbox" name="extra" value="chickenwings" data-price="2.00" data-human-desc="Chicken Wings"/> 
+                        Chicken Wings (4 piece) - <span class="price">£2.00</span></p>
+                    </div>
+                    <img alt="chips" class="chipsimage" src="images/chips2.jpg" />
+                    <img alt="garlic bread" class="garlicbread" src="images/Garlic-Bread_212.jpg" />
+                    <img alt="chicken wings" class="chickenwings" src="images/hotwings.jpg" />
+              	</div>
+                
+                <div class="drinks">
+                	<p class="drinkstitle">Select a drink:</p>
+                    <div class="drink">
+                        <p><input type="checkbox" name="drink" value="coke" data-price="0.80" data-human-desc="Coke"/> 
+                        Coke - <span class="price">£0.80</span></p>
+                        <p><input type="checkbox" name="drink" value="fanta" data-price="0.80" data-human-desc="Fanta"/> 
+                        Fanta - <span class="price">£0.80</span></p>
+                        <p><input type="checkbox" name="drink" value="dietcoke" data-price="0.80" data-human-desc="Diet Coke"/> 
+                        Diet Coke - <span class="price">£0.80</span></p>
+                        <p><input type="checkbox" name="drink" value="7up" data-price="0.80" data-human-desc="7up"/> 
+                        7up - <span class="price">£0.80</span></p>
+                        <p><input type="checkbox" name="drink" value="bottlewater" data-price="1.00" data-human-desc="Bottle of Water"/> 
+                        Bottle of Water - <span class="price">£1.00</span></p>
+                    </div>
+                    <img alt="coke" class="cokecan" src="images/cokecan.jpg" />
+                    <img alt="fanta" class="fantacan" src="images/fantacan.jpg" />
+                    <img alt="dietcoke" class="dietcokecan" src="images/Diet-Coke.jpg" />
+                    <img alt="7up" class="sevenupcan" src="images/7UP.jpg" />
+                    <img alt="bottledwater" class="bottledwater" src="images/bottledwater.jpeg" />
+                </div>
+                 
+                <div class="delivery">
+                	<p class="deliverytitle">*Enter your delivery address:</p>
+                    <div class="deliver">
+                    
+                        <p>Address Line 1: </p>
+                        <p class="address1" style="display:inline;">
+                        <input type="text" name="address1"  id="address1" placeholder="Type Address Line 1 here"/></p>
+                        <img alt="redcross" id="cross" src="images/red cross.fw.png" style="display:none"/>
+                    	<img alt="greentick" id="tick" src="images/green tick.fw.png" style="display:none"/>
+                        <p id="address1RequiredError" style="display: none">  Required </p>
+                        
+                        <p>Address Line 2: </p>
+                        <p class="address2" style="display:inline">
+                        <input type="text" name="address2" id="address2" placeholder="Type Address Line 2 here"/></p>
+                        <img alt="redcross" id="cross2" src="images/red cross.fw.png" style="display:none"/>
+                    	<img alt="greentick" id="tick2" src="images/green tick.fw.png" style="display:none"/>
+                        <p id="address2RequiredError" style="display: none">  Required </p>
+                        
+                        <p>Post Code: </p>
+                        <p class="postcode" style="display:inline">
+                        <input type="text" name="postcode" id="postcode" placeholder="Type Postcode here"/></p>
+                        <img alt="redcross" id="cross3" src="images/red cross.fw.png" style="display:none"/>
+                    	<img alt="greentick" id="tick3" src="images/green tick.fw.png" style="display:none"/>
+                        <p id="postcodeRequiredError" style="display: none">  Required </p>
+                        
+                        <p>Phone Number: </p>
+                        <p class="number" style="display:inline">
+                        <input type="number" name="number" id="number" placeholder="Type Phone Number here"/></p>
+                        <img alt="redcross" id="cross4" src="images/red cross.fw.png" style="display:none"/>
+                    	<img alt="greentick" id="tick4" src="images/green tick.fw.png" style="display:none"/>
+                        <p id="numberRequiredError" style="display: none">  Required </p>
+                        
+                    </div>
+                    <img alt="delivery" class="deliveryimage" src="images/delivery.jpg" />
+              	</div>
+              	
+              	<div class="summarybox">
+                    <p class="summarytitle">Order Summary:</p>
+                    <h2>Total price:</h2>
+                    <p id="price" style="color:#900; font-size:24px;">£0</p>
+                    <div class="summarychoices" style="float:left; margin-top:-30px;">
+                        <p style="float:left; font-size:24px; width:172px;">Pizza:</p>                    
+                        <p style="float:left; font-size:24px; width:200px;">Topping(s):</p>                    
+                        <p style="float:left; font-size:24px; width:175px;">Extras:</p>                    
+                        <p style="float:left; font-size:24px; width:175px;">Drink:</p>
+                    </div>
+                    <div class="summarychoices2" style="float:left; margin-top:-25px;">
+                        <p id="pizza" style="float:left; font-size:18px; width:175px;"></p>
+                        <p id="pizza2" style="float:left; font-size:18px; width:197px;"></p>
+                        <p id="extra" style="float:left; font-size:18px; width:175px;"></p>
+                        <p id="drink" style="float:left; font-size:18px; width:175px;"></p>                
+                    </div>
+                    
+            	</div>
+                <div class="buttons">
+                	<p class="submit"><input type="submit" name="submit" value="Place Order" /></p>
+                    <p class="reset"><input type="reset" name="reset" value="Reset Order" /></p>
+                </div>                
+            </form>
+        </div>
+        
+    </div><!-- end of wrapper -->
+    
+    
+<footer>
+    	
+        <div class="footercontent">
+            <!-- bottom navigation menu -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- address -->
+            <p class="bottomaddress">
+                46 London Road<br />
+                Southampton<br />
+                Hampshire<br />
+                SO15 2AH<br />
+                United Kingdom
+            </p>
+            <!-- social media icons -->
+            <div class="footericons">
+            	<a href="https://www.facebook.com/"><img alt="facebook" src="images/facebook.ico"></a>
+                <a href="https://twitter.com/?lang=en"><img alt="twitter" src="images/twitter.png"></a>
+                <a href="https://www.instagram.com/"><img alt="instagram" src="images/instagram.fw.png"></a>
+                <a href="https://www.youtube.com/"><img alt="youtube" src="images/youtube.png"></a>
+            </div>
+        </div>   		
+        <!-- copyright/creator--> 
+        <p class="creator">&copy; Richard Locke Southampton Solent University 2017</p>
+      	
+	 </footer>
+</body>
+</html>

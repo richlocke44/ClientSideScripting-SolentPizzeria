@@ -1,0 +1,329 @@
+.backgroundimg
+{
+	background-image:url(../images/ipad-718411.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	height:540px;
+	width:100%;
+	float:left;
+	position:absolute;
+	z-index:-1;
+	margin-left:-8px;
+	
+}
+
+.headbackground
+{
+	background-color:#333;
+	opacity:0.5;
+	width:100%;
+	height:245px;
+	margin-top:50px;
+	position:absolute;
+	z-index:auto;
+	float:left;
+	margin-left:-8px;
+}
+
+#wrapper
+{
+	width:1200px;
+	margin:0 auto;
+	height:2240px;
+}
+.logo
+{
+	float:left;
+	position:relative;
+	z-index:1;
+	margin-top:50px;
+	margin-left:50px;
+	width:459px;
+}
+.headnav
+{
+	position:relative;
+	z-index:1;
+	float:right;
+	margin-top:100px;
+	text-align:center;
+	display:block;
+    width:400px;	
+}
+
+.headnav ul
+{
+	list-style-type: none;
+    margin: 0 auto;
+	padding: 0;
+    overflow: hidden;    
+	height:40px;
+	text-align:center;
+    
+}
+.headnav li
+{
+	display:inline-block;
+    margin: 0 auto;
+}
+.headnav li a
+{
+	display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;	
+	margin: 0 auto;
+	width:75px;
+	font-size:24px;
+	border-right-style:solid;
+	border-right-color:white;
+	border-right-width:2px;
+	
+}
+.headnav li a:hover
+{
+	background-color:#900;
+}
+.headnav li a:active
+{
+	text-decoration:underline;
+}
+.headcontent
+{
+	float:right;
+	position:relative;
+	top:-45px;
+	right:-379px;
+	z-index:2;
+	width:250px;
+	margin-top:200px;
+	display:inline;
+}
+.headinfo
+{
+	text-align:right;
+	color:white;
+	font-size:18px;	
+	width:250px;
+}
+.headinfo a
+{
+	text-decoration:none;
+	color:white;
+	
+}
+.headinfo a:hover
+{
+	color:#900;
+}
+#clock
+{
+	color:white;
+	font-size:18px;
+	float:right;
+	width:250px;
+	text-align:right;
+	
+}
+#date
+{
+	color:white;
+	font-size:18px;
+	float:right;
+	width:250px;
+	text-align:right;
+}
+.title
+{
+	float:right;
+	position:relative;
+	left:620px;
+	
+}
+.contactimg
+{
+	float:left;
+	position:relative;
+	margin:0 auto;
+	width:1000px;
+	height:200px;
+	margin-top:10px;
+    left: 100px;
+    right:0px;
+}
+.section
+{
+	border-color:#900;
+	float:left;
+	border-style:solid;
+	padding-bottom:20px;	
+	width:1000px;
+	margin-top:60px;
+	margin:0 auto;
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin-left:auto;
+	margin-right:auto;	
+	top:760px;
+	
+}
+.section h1
+{
+	text-align:center;
+	color:#900;
+	width:750px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.contact
+{
+	border-color:green;
+	border-style:solid;
+	border-width:10px;
+	width:750px;
+	margin:0 auto;
+	margin-top:10px;
+	padding:10px;
+}
+
+textarea
+{
+	width:100%;
+	height:200px;
+	padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #900;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+input[type=submit]
+{
+	text-align:center;
+	width:100%;
+	height:50px;
+	margin:0 auto;
+	padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #900;
+    border-radius: 4px;
+    background-color:green;
+    font-size: 16px;
+	color:white;
+}
+input[type=submit]:hover
+{
+	border-color:green;
+	background-color:#900
+}
+#firstnameRequiredError, #lastnameRequiredError, 
+#postcodeRequiredError, #emailRequiredError, 
+#numberRequiredError, #messageRequiredError
+{
+	
+	color:#900;
+	width:173px;
+}
+#cross,#tick,#cross2,#tick2,
+#cross3,#tick3,#cross4,#tick4,
+#cross5,#tick5,#cross6,#tick6
+{
+	width:15px;
+	height:15px;
+}
+.googlemap
+{
+    border-color:#900;
+	float:left;
+	border-style:solid;
+	padding-bottom:20px;	
+	width:1000px;
+	margin-top:60px;
+	margin:0 auto;
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin-left:auto;
+	margin-right:auto;	
+	top:1620px;
+}
+#map
+{
+	width:100%;
+	height:600px;
+}
+footer
+{
+	float:left;
+	background-color:#333333;
+	width:101%;
+	height:200px;
+	bottom:0;	
+	right:0;
+	left:0;	
+	margin-top:20px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+.footercontent
+{
+	width:1200px;
+	margin:0 auto;
+	margin-top:0px;
+}
+footer ul
+{
+	list-style-type:none;
+	width:50px;
+	font-size:20px;
+	height:50px;
+	float:left;
+	margin-top:20px;
+}
+footer a
+{
+	text-decoration:none;
+	color:black;
+}
+footer a:hover
+{
+	color:white;
+}
+.bottomaddress
+{
+	width:120px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:30px;
+	float:none;
+	
+}
+.footericons
+{
+	width:100px;
+	height:100px;
+	float:right;
+	margin-top:-100px;
+	
+}
+.footericons img
+{
+	width:25px;
+	height:25px;
+	display:block;
+	margin:0 auto;
+	margin-top:5px;
+}
+.creator
+{
+	width:100%;
+	height:30px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	margin-top:30px;
+	float:left;
+}

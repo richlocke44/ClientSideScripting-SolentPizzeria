@@ -1,0 +1,374 @@
+.backgroundimg
+{
+	background-image:url(../images/bread-oven-1958045_19203.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	height:540px;
+	width:100%;
+	float:left;
+	position:absolute;
+	z-index:-1;
+	margin-left:-8px;
+	
+}
+
+.headbackground
+{
+	background-color:#333;
+	opacity:0.5;
+	width:100%;
+	height:245px;
+	margin-top:50px;
+	position:absolute;
+	z-index:auto;
+	float:left;
+	margin-left:-8px;
+}
+
+#wrapper
+{
+	width:1200px;
+	margin:0 auto;
+	height:3110px;
+}
+.logo
+{
+	float:left;
+	position:relative;
+	z-index:1;
+	margin-top:50px;
+	margin-left:50px;
+	width:459px;
+}
+.headnav
+{
+	position:relative;
+	z-index:1;
+	float:right;
+	margin-top:100px;
+	text-align:center;
+	display:block;
+    width:400px;	
+}
+
+.headnav ul
+{
+	list-style-type: none;
+    margin: 0 auto;
+	padding: 0;
+    overflow: hidden;    
+	height:40px;
+	text-align:center;
+    
+}
+.headnav li
+{
+	display:inline-block;
+    margin: 0 auto;
+}
+.headnav li a
+{
+	display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;	
+	margin: 0 auto;
+	width:75px;
+	font-size:24px;
+	border-right-style:solid;
+	border-right-color:white;
+	border-right-width:2px;
+	
+}
+.headnav li a:hover
+{
+	background-color:#900;
+}
+.headnav li a:active
+{
+	text-decoration:underline;
+}
+.headcontent
+{
+	float:right;
+	position:relative;
+	top:-45px;
+	right:-379px;
+	z-index:2;
+	width:250px;
+	margin-top:200px;
+	display:inline;
+}
+.headinfo
+{
+	text-align:right;
+	color:white;
+	font-size:18px;	
+	width:250px;
+}
+.headinfo a
+{
+	text-decoration:none;
+	color:white;
+	
+}
+.headinfo a:hover
+{
+	color:#900;
+}
+#clock
+{
+	color:white;
+	font-size:18px;
+	float:right;
+	width:250px;
+	text-align:right;
+	
+}
+#date
+{
+	color:white;
+	font-size:18px;
+	float:right;
+	width:250px;
+	text-align:right;
+}
+.title
+{
+	float:right;
+	position:relative;
+	left:620px;
+}
+.section
+{
+	border-color:#900;
+	float:left;
+	border-style:solid;
+	padding-bottom:20px;	
+	width:1000px;
+	margin-top:60px;
+	margin:0 auto;
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin-left:auto;
+	margin-right:auto;	
+	top:560px;
+	
+}
+.section h1
+{
+	text-align:center;
+	color:#900;
+}
+.pizzasize, .pizzatopping, .extras, .delivery, .drinks, .summarybox
+{
+	border-color:green;
+	border-style:solid;
+	border-width:10px;
+	width:750px;
+	margin:0 auto;
+	margin-top:10px;
+	padding:10px;
+	
+}
+.drinks
+{
+	height:250px;
+}
+.sizetitle, .toppingtitle, .extrastitle, 
+.deliverytitle, .drinkstitle, .summarytitle
+{
+	color:white;
+	background-color:black;
+	margin-top:0px;
+	font-size:20px;
+	padding:10px;
+}
+
+.price
+{
+	color:#900;
+}
+.buttons
+{
+	width:250px;
+	margin:0 auto;
+}
+input[type=submit]
+{
+	text-align:center;
+	width:100px;
+	height:50px;
+	float:left;
+	margin:0 auto;
+	background-color:green;
+	color:white;
+	border-color:#900;
+	border-style:solid;
+}
+input[type=reset]
+{
+	text-align:center;
+	width:100px;
+	height:50px;
+	float:right;
+	margin:0 auto;
+	background-color:#900;
+	color:white;
+	border-color:green;
+	border-style:solid;
+}
+input[type=submit]:hover
+{
+	color:#900;
+}
+input[type=reset]:hover
+{
+	color:green;
+}
+.sizeimage
+{
+	width:500px;
+	height:165px;
+	margin-left:20px;
+}
+.sizes, .toppings, .extra, .drink, .deliver
+{
+	float:left;
+}
+.toppingimage
+{
+	width:575px;
+	height:375px;
+	margin-left:20px;
+	
+}
+.chipsimage, .garlicbread, .chickenwings
+{
+	width:125px;
+	height:125px;
+	margin-left:20px;
+}
+.cokecan,.fantacan, .dietcokecan, .sevenupcan, .bottledwater
+{
+	width:110px;
+	height:110px;
+	
+}
+.coke
+{
+	margin-left:20px;
+}
+.delivery
+{
+	height:350px;
+}
+.deliver
+{
+	float:left;
+	
+}
+.deliveryimage
+{
+	width:350px;
+	margin-right:0px;
+	
+}
+#address1RequiredError, #address2eRequiredError, 
+#postcodeRequiredError, #numberRequiredError
+{
+	
+	color:#900;
+	width:173px;
+}
+#cross,#tick,#cross2,#tick2,
+#cross3,#tick3,#cross4,#tick4
+{
+	width:15px;
+	height:15px;
+}
+.summarybox
+{
+	
+	height:590px;
+	
+	
+}
+.summarychoices, .summarychoices2
+{
+	width:100%;
+}
+footer
+{
+	float:left;
+	background-color:#333333;
+	width:101%;
+	height:200px;
+	bottom:0;	
+	right:0;
+	left:0;	
+	margin-top:20px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+.footercontent
+{
+	width:1200px;
+	margin:0 auto;
+	margin-top:0px;
+}
+footer ul
+{
+	list-style-type:none;
+	width:50px;
+	font-size:20px;
+	height:50px;
+	float:left;
+	margin-top:20px;
+}
+footer a
+{
+	text-decoration:none;
+	color:black;
+}
+footer a:hover
+{
+	color:white;
+}
+.bottomaddress
+{
+	width:120px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:30px;
+	float:none;
+	
+}
+.footericons
+{
+	width:100px;
+	height:100px;
+	float:right;
+	margin-top:-100px;
+	
+}
+.footericons img
+{
+	width:25px;
+	height:25px;
+	display:block;
+	margin:0 auto;
+	margin-top:5px;
+}
+.creator
+{
+	width:100%;
+	height:30px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	margin-top:30px;
+	float:left;
+}
